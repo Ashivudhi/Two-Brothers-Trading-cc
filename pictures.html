@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="try-style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>TWO BROTHERS TRAIDING CC</h1>
+</header>
+  <ul>
+   <li class="active"><a href="tbt.html"><span>HOME</span></a></li>
+   <li><a href="about.html"><span>ABOUT US</span></a></li>	
+   <li ><a href="try.html"><span>LOGIN</span></a>
+    
+         <li><a href="services.html"><span>SERVICES & PRICING</span></a></li>
+      </ul>
+
+
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="18.jpg" style="width:100%">
+  <img class="mySlides" src="19.jpg" style="width:100%">
+  <img class="mySlides" src="20.jpg" style="width:100%">
+<img class="mySlides" src="21.jpg" style="width:100%">
+<img class="mySlides" src="22.png" style="width:100%">
+<img class="mySlides" src="23.jpg" style="width:100%">
+<img class="mySlides" src="24.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+ 
+<footer>Copyright &copy Reserved<br/> TWO BROTHERS TRAIDING CC 2017; 
+<p>[<a href="tbt.html">HOME</a>][<a href="about.html">ABOUT US</a>][<a href="try.html">LOGIN</a>][<a href="services.html">SERVICES & PRICING</a>]
+</footer>
+
+</div>
+
+</body>
+</html>
